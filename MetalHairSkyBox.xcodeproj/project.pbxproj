@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		831FEB0219D0EBD6004173E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB0119D0EBD6004173E4 /* main.m */; };
+		831FEB0519D0EBD7004173E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB0419D0EBD7004173E4 /* AppDelegate.m */; };
+		831FEB0819D0EBD7004173E4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB0719D0EBD7004173E4 /* ViewController.mm */; };
+		831FEB0B19D0EBD7004173E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FEB0919D0EBD7004173E4 /* Main.storyboard */; };
+		831FEB0D19D0EBD7004173E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831FEB0C19D0EBD7004173E4 /* Images.xcassets */; };
+		831FEB1019D0EBD7004173E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831FEB0E19D0EBD7004173E4 /* LaunchScreen.xib */; };
+		831FEB2719D0EE01004173E4 /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FEB2619D0EE01004173E4 /* MetalView.m */; };
+		831FEB2919D0EE26004173E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831FEB2819D0EE26004173E4 /* UIKit.framework */; };
+		831FEB2B19D0EE2B004173E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831FEB2A19D0EE2B004173E4 /* QuartzCore.framework */; };
+		831FEB2D19D0EE2F004173E4 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831FEB2C19D0EE2F004173E4 /* Metal.framework */; };
+		8360EA2A19D73E86005A0326 /* Transformations.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8360EA2919D73E86005A0326 /* Transformations.mm */; };
+		8360EA2D19D76767005A0326 /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360EA2C19D76767005A0326 /* Material.m */; };
+		8360EA3019D767AF005A0326 /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8360EA2F19D767AF005A0326 /* Mesh.m */; };
+		8360EA3419D7977E005A0326 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360EA3319D7977E005A0326 /* AudioToolbox.framework */; };
+		83693FF619D38A5000BF1652 /* OBJModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83693FF519D38A5000BF1652 /* OBJModel.mm */; };
+		8369400719D4DC8D00BF1652 /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8369400619D4DC8D00BF1652 /* Renderer.mm */; };
+		8369400C19D5396A00BF1652 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8369400B19D5396A00BF1652 /* CoreGraphics.framework */; };
+		8369400E19D53BB100BF1652 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8369400D19D53BB100BF1652 /* Shaders.metal */; };
+		83B45A1719D89C33000858A2 /* OBJGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B45A1619D89C33000858A2 /* OBJGroup.m */; };
+		9B578D211A11C155003B365B /* calf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D201A11C155003B365B /* calf.png */; };
+		9B578D301A12C6B7003B365B /* BodyPart.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578D231A12C6B7003B365B /* BodyPart.mm */; };
+		9B578D311A12C6B7003B365B /* common.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B578D251A12C6B7003B365B /* common.m */; };
+		9B578D321A12C6B7003B365B /* Dancer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578D271A12C6B7003B365B /* Dancer.mm */; };
+		9B578D411A12C720003B365B /* arm.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D381A12C720003B365B /* arm.obj */; };
+		9B578D421A12C720003B365B /* calf.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D391A12C720003B365B /* calf.obj */; };
+		9B578D431A12C720003B365B /* foot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D3A1A12C720003B365B /* foot.obj */; };
+		9B578D441A12C720003B365B /* hand.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D3B1A12C720003B365B /* hand.obj */; };
+		9B578D451A12C720003B365B /* head5.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D3C1A12C720003B365B /* head5.obj */; };
+		9B578D461A12C720003B365B /* hip.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D3D1A12C720003B365B /* hip.obj */; };
+		9B578D471A12C720003B365B /* shoulder.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D3E1A12C720003B365B /* shoulder.obj */; };
+		9B578D481A12C720003B365B /* thigh.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D3F1A12C720003B365B /* thigh.obj */; };
+		9B578D491A12C720003B365B /* torso.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D401A12C720003B365B /* torso.obj */; };
+		9B578D551A154FE3003B365B /* ManualControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B578D541A154FE3003B365B /* ManualControlView.m */; };
+		9B578D581A17EE28003B365B /* hair.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D571A17EE28003B365B /* hair.obj */; };
+		9B578D5B1A17F59C003B365B /* hairlock.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9B578D5A1A17F59C003B365B /* hairlock.obj */; };
+		9B578D5F1A17F810003B365B /* Placement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B578D5E1A17F810003B365B /* Placement.m */; };
+		9BBE895A1A30356C00CAB93C /* AAPLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE89561A30356C00CAB93C /* AAPLTexture.m */; };
+		9BBE895B1A30356C00CAB93C /* skybox.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE89581A30356C00CAB93C /* skybox.metal */; };
+		9BBE895C1A30356C00CAB93C /* SkyBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE89591A30356C00CAB93C /* SkyBox.mm */; };
+		9BBE89791A303E5000CAB93C /* bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89731A303E5000CAB93C /* bk.png */; };
+		9BBE897A1A303E5000CAB93C /* dn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89741A303E5000CAB93C /* dn.png */; };
+		9BBE897B1A303E5000CAB93C /* ft.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89751A303E5000CAB93C /* ft.png */; };
+		9BBE897C1A303E5000CAB93C /* lf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89761A303E5000CAB93C /* lf.png */; };
+		9BBE897D1A303E5000CAB93C /* rt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89771A303E5000CAB93C /* rt.png */; };
+		9BBE897E1A303E5000CAB93C /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89781A303E5000CAB93C /* up.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		831FEAFC19D0EBD6004173E4 /* MetalHairSkyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalHairSkyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		831FEB0019D0EBD6004173E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		831FEB0119D0EBD6004173E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		831FEB0319D0EBD7004173E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		831FEB0419D0EBD7004173E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		831FEB0619D0EBD7004173E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		831FEB0719D0EBD7004173E4 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		831FEB0A19D0EBD7004173E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		831FEB0C19D0EBD7004173E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		831FEB0F19D0EBD7004173E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		831FEB2519D0EE01004173E4 /* MetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalView.h; sourceTree = "<group>"; };
+		831FEB2619D0EE01004173E4 /* MetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalView.m; sourceTree = "<group>"; };
+		831FEB2819D0EE26004173E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		831FEB2A19D0EE2B004173E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		831FEB2C19D0EE2F004173E4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		8360EA2819D73E86005A0326 /* Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transformations.h; sourceTree = "<group>"; };
+		8360EA2919D73E86005A0326 /* Transformations.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transformations.mm; sourceTree = "<group>"; };
+		8360EA2B19D76767005A0326 /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		8360EA2C19D76767005A0326 /* Material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Material.m; sourceTree = "<group>"; };
+		8360EA2E19D767AF005A0326 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		8360EA2F19D767AF005A0326 /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesh.m; sourceTree = "<group>"; };
+		8360EA3319D7977E005A0326 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		83693FF419D38A5000BF1652 /* OBJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJModel.h; sourceTree = "<group>"; };
+		83693FF519D38A5000BF1652 /* OBJModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OBJModel.mm; sourceTree = "<group>"; };
+		8369400519D4DC8D00BF1652 /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		8369400619D4DC8D00BF1652 /* Renderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
+		8369400919D538FC00BF1652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8369400B19D5396A00BF1652 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8369400D19D53BB100BF1652 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		83B45A1519D89C33000858A2 /* OBJGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJGroup.h; sourceTree = "<group>"; };
+		83B45A1619D89C33000858A2 /* OBJGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJGroup.m; sourceTree = "<group>"; };
+		9B578D201A11C155003B365B /* calf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calf.png; path = spot/calf.png; sourceTree = "<group>"; };
+		9B578D221A12C6B7003B365B /* BodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodyPart.h; sourceTree = "<group>"; };
+		9B578D231A12C6B7003B365B /* BodyPart.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BodyPart.mm; sourceTree = "<group>"; };
+		9B578D241A12C6B7003B365B /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		9B578D251A12C6B7003B365B /* common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = common.m; sourceTree = "<group>"; };
+		9B578D261A12C6B7003B365B /* Dancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dancer.h; sourceTree = "<group>"; };
+		9B578D271A12C6B7003B365B /* Dancer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dancer.mm; sourceTree = "<group>"; };
+		9B578D2F1A12C6B7003B365B /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
+		9B578D381A12C720003B365B /* arm.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = arm.obj; path = Blender/arm.obj; sourceTree = "<group>"; };
+		9B578D391A12C720003B365B /* calf.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = calf.obj; path = Blender/calf.obj; sourceTree = "<group>"; };
+		9B578D3A1A12C720003B365B /* foot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = foot.obj; path = Blender/foot.obj; sourceTree = "<group>"; };
+		9B578D3B1A12C720003B365B /* hand.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand.obj; path = Blender/hand.obj; sourceTree = "<group>"; };
+		9B578D3C1A12C720003B365B /* head5.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = head5.obj; path = Blender/head5.obj; sourceTree = "<group>"; };
+		9B578D3D1A12C720003B365B /* hip.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hip.obj; path = Blender/hip.obj; sourceTree = "<group>"; };
+		9B578D3E1A12C720003B365B /* shoulder.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = shoulder.obj; path = Blender/shoulder.obj; sourceTree = "<group>"; };
+		9B578D3F1A12C720003B365B /* thigh.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = thigh.obj; path = Blender/thigh.obj; sourceTree = "<group>"; };
+		9B578D401A12C720003B365B /* torso.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = torso.obj; path = Blender/torso.obj; sourceTree = "<group>"; };
+		9B578D4A1A12C757003B365B /* arm.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = arm.blend; path = Blender/arm.blend; sourceTree = "<group>"; };
+		9B578D4B1A12C757003B365B /* calf.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = calf.blend; path = Blender/calf.blend; sourceTree = "<group>"; };
+		9B578D4C1A12C757003B365B /* foot.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = foot.blend; path = Blender/foot.blend; sourceTree = "<group>"; };
+		9B578D4D1A12C757003B365B /* hand.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = hand.blend; path = Blender/hand.blend; sourceTree = "<group>"; };
+		9B578D4E1A12C757003B365B /* head5.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = head5.blend; path = Blender/head5.blend; sourceTree = "<group>"; };
+		9B578D4F1A12C757003B365B /* hip.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = hip.blend; path = Blender/hip.blend; sourceTree = "<group>"; };
+		9B578D501A12C757003B365B /* shoulder.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = shoulder.blend; path = Blender/shoulder.blend; sourceTree = "<group>"; };
+		9B578D511A12C757003B365B /* thigh.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = thigh.blend; path = Blender/thigh.blend; sourceTree = "<group>"; };
+		9B578D521A12C757003B365B /* torso.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = torso.blend; path = Blender/torso.blend; sourceTree = "<group>"; };
+		9B578D531A154FE3003B365B /* ManualControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualControlView.h; sourceTree = "<group>"; };
+		9B578D541A154FE3003B365B /* ManualControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualControlView.m; sourceTree = "<group>"; };
+		9B578D571A17EE28003B365B /* hair.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hair.obj; path = Blender/hair.obj; sourceTree = "<group>"; };
+		9B578D591A17EE33003B365B /* hair.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = hair.blend; path = Blender/hair.blend; sourceTree = "<group>"; };
+		9B578D5A1A17F59C003B365B /* hairlock.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hairlock.obj; path = Blender/hairlock.obj; sourceTree = "<group>"; };
+		9B578D5C1A17F5AD003B365B /* hairLock.blend */ = {isa = PBXFileReference; lastKnownFileType = file; name = hairLock.blend; path = Blender/hairLock.blend; sourceTree = "<group>"; };
+		9B578D5D1A17F810003B365B /* Placement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Placement.h; sourceTree = "<group>"; };
+		9B578D5E1A17F810003B365B /* Placement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Placement.m; sourceTree = "<group>"; };
+		9BBE89551A30356C00CAB93C /* AAPLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLTexture.h; sourceTree = "<group>"; };
+		9BBE89561A30356C00CAB93C /* AAPLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLTexture.m; sourceTree = "<group>"; };
+		9BBE89571A30356C00CAB93C /* SkyBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBox.h; sourceTree = "<group>"; };
+		9BBE89581A30356C00CAB93C /* skybox.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = skybox.metal; sourceTree = "<group>"; };
+		9BBE89591A30356C00CAB93C /* SkyBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SkyBox.mm; sourceTree = "<group>"; };
+		9BBE89731A303E5000CAB93C /* bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk.png; sourceTree = "<group>"; };
+		9BBE89741A303E5000CAB93C /* dn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dn.png; sourceTree = "<group>"; };
+		9BBE89751A303E5000CAB93C /* ft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ft.png; sourceTree = "<group>"; };
+		9BBE89761A303E5000CAB93C /* lf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lf.png; sourceTree = "<group>"; };
+		9BBE89771A303E5000CAB93C /* rt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rt.png; sourceTree = "<group>"; };
+		9BBE89781A303E5000CAB93C /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		831FEAF919D0EBD6004173E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8360EA3419D7977E005A0326 /* AudioToolbox.framework in Frameworks */,
+				8369400C19D5396A00BF1652 /* CoreGraphics.framework in Frameworks */,
+				831FEB2D19D0EE2F004173E4 /* Metal.framework in Frameworks */,
+				831FEB2B19D0EE2B004173E4 /* QuartzCore.framework in Frameworks */,
+				831FEB2919D0EE26004173E4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		831FEAF319D0EBD6004173E4 = {
+			isa = PBXGroup;
+			children = (
+				831FEAFE19D0EBD6004173E4 /* Source */,
+				831FEB2E19D0EE3E004173E4 /* Frameworks */,
+				831FEAFD19D0EBD6004173E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		831FEAFD19D0EBD6004173E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831FEAFC19D0EBD6004173E4 /* MetalHairSkyBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		831FEAFE19D0EBD6004173E4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8369400D19D53BB100BF1652 /* Shaders.metal */,
+				831FEB0919D0EBD7004173E4 /* Main.storyboard */,
+				9B578D2F1A12C6B7003B365B /* Shared.h */,
+				9B578D261A12C6B7003B365B /* Dancer.h */,
+				9B578D271A12C6B7003B365B /* Dancer.mm */,
+				9B578D221A12C6B7003B365B /* BodyPart.h */,
+				9B578D231A12C6B7003B365B /* BodyPart.mm */,
+				9BBE89551A30356C00CAB93C /* AAPLTexture.h */,
+				9BBE89561A30356C00CAB93C /* AAPLTexture.m */,
+				9B578D561A155026003B365B /* ManualControl */,
+				9B578D371A12C6D1003B365B /* Blender */,
+				9B578D241A12C6B7003B365B /* common.h */,
+				9B578D251A12C6B7003B365B /* common.m */,
+				831FEB0319D0EBD7004173E4 /* AppDelegate.h */,
+				831FEB0419D0EBD7004173E4 /* AppDelegate.m */,
+				831FEB2519D0EE01004173E4 /* MetalView.h */,
+				831FEB2619D0EE01004173E4 /* MetalView.m */,
+				8360EA2B19D76767005A0326 /* Material.h */,
+				8360EA2C19D76767005A0326 /* Material.m */,
+				8360EA2E19D767AF005A0326 /* Mesh.h */,
+				8360EA2F19D767AF005A0326 /* Mesh.m */,
+				83B45A1519D89C33000858A2 /* OBJGroup.h */,
+				83B45A1619D89C33000858A2 /* OBJGroup.m */,
+				83693FF419D38A5000BF1652 /* OBJModel.h */,
+				83693FF519D38A5000BF1652 /* OBJModel.mm */,
+				8369400519D4DC8D00BF1652 /* Renderer.h */,
+				8369400619D4DC8D00BF1652 /* Renderer.mm */,
+				8360EA2819D73E86005A0326 /* Transformations.h */,
+				8360EA2919D73E86005A0326 /* Transformations.mm */,
+				831FEB0619D0EBD7004173E4 /* ViewController.h */,
+				831FEB0719D0EBD7004173E4 /* ViewController.mm */,
+				9BBE897F1A30447700CAB93C /* SkyBox */,
+				831FEAFF19D0EBD6004173E4 /* Supporting Files */,
+			);
+			name = Source;
+			path = BasicTexturing;
+			sourceTree = "<group>";
+		};
+		831FEAFF19D0EBD6004173E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				831FEB0C19D0EBD7004173E4 /* Images.xcassets */,
+				831FEB0E19D0EBD7004173E4 /* LaunchScreen.xib */,
+				9B578D201A11C155003B365B /* calf.png */,
+				831FEB0019D0EBD6004173E4 /* Info.plist */,
+				831FEB0119D0EBD6004173E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		831FEB2E19D0EE3E004173E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8360EA3319D7977E005A0326 /* AudioToolbox.framework */,
+				8369400B19D5396A00BF1652 /* CoreGraphics.framework */,
+				8369400919D538FC00BF1652 /* Foundation.framework */,
+				831FEB2C19D0EE2F004173E4 /* Metal.framework */,
+				831FEB2A19D0EE2B004173E4 /* QuartzCore.framework */,
+				831FEB2819D0EE26004173E4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B578D371A12C6D1003B365B /* Blender */ = {
+			isa = PBXGroup;
+			children = (
+				9B578D381A12C720003B365B /* arm.obj */,
+				9B578D391A12C720003B365B /* calf.obj */,
+				9B578D3A1A12C720003B365B /* foot.obj */,
+				9B578D3B1A12C720003B365B /* hand.obj */,
+				9B578D3C1A12C720003B365B /* head5.obj */,
+				9B578D571A17EE28003B365B /* hair.obj */,
+				9B578D5A1A17F59C003B365B /* hairlock.obj */,
+				9B578D3D1A12C720003B365B /* hip.obj */,
+				9B578D3E1A12C720003B365B /* shoulder.obj */,
+				9B578D3F1A12C720003B365B /* thigh.obj */,
+				9B578D401A12C720003B365B /* torso.obj */,
+				9B578D4A1A12C757003B365B /* arm.blend */,
+				9B578D4B1A12C757003B365B /* calf.blend */,
+				9B578D4C1A12C757003B365B /* foot.blend */,
+				9B578D4D1A12C757003B365B /* hand.blend */,
+				9B578D4E1A12C757003B365B /* head5.blend */,
+				9B578D4F1A12C757003B365B /* hip.blend */,
+				9B578D5C1A17F5AD003B365B /* hairLock.blend */,
+				9B578D501A12C757003B365B /* shoulder.blend */,
+				9B578D511A12C757003B365B /* thigh.blend */,
+				9B578D521A12C757003B365B /* torso.blend */,
+				9B578D591A17EE33003B365B /* hair.blend */,
+			);
+			name = Blender;
+			sourceTree = "<group>";
+		};
+		9B578D561A155026003B365B /* ManualControl */ = {
+			isa = PBXGroup;
+			children = (
+				9B578D531A154FE3003B365B /* ManualControlView.h */,
+				9B578D541A154FE3003B365B /* ManualControlView.m */,
+				9B578D5D1A17F810003B365B /* Placement.h */,
+				9B578D5E1A17F810003B365B /* Placement.m */,
+			);
+			name = ManualControl;
+			sourceTree = "<group>";
+		};
+		9BBE897F1A30447700CAB93C /* SkyBox */ = {
+			isa = PBXGroup;
+			children = (
+				9BBE89571A30356C00CAB93C /* SkyBox.h */,
+				9BBE89591A30356C00CAB93C /* SkyBox.mm */,
+				9BBE89581A30356C00CAB93C /* skybox.metal */,
+				9BBE89731A303E5000CAB93C /* bk.png */,
+				9BBE89741A303E5000CAB93C /* dn.png */,
+				9BBE89751A303E5000CAB93C /* ft.png */,
+				9BBE89761A303E5000CAB93C /* lf.png */,
+				9BBE89771A303E5000CAB93C /* rt.png */,
+				9BBE89781A303E5000CAB93C /* up.png */,
+			);
+			name = SkyBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		831FEAFB19D0EBD6004173E4 /* MetalHairSkyBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831FEB1F19D0EBD7004173E4 /* Build configuration list for PBXNativeTarget "MetalHairSkyBox" */;
+			buildPhases = (
+				831FEAF819D0EBD6004173E4 /* Sources */,
+				831FEAF919D0EBD6004173E4 /* Frameworks */,
+				831FEAFA19D0EBD6004173E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalHairSkyBox;
+			productName = BasicTexturing;
+			productReference = 831FEAFC19D0EBD6004173E4 /* MetalHairSkyBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		831FEAF419D0EBD6004173E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Metal By Example";
+				TargetAttributes = {
+					831FEAFB19D0EBD6004173E4 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 7237X7VY2S;
+					};
+				};
+			};
+			buildConfigurationList = 831FEAF719D0EBD6004173E4 /* Build configuration list for PBXProject "MetalHairSkyBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 831FEAF319D0EBD6004173E4;
+			productRefGroup = 831FEAFD19D0EBD6004173E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				831FEAFB19D0EBD6004173E4 /* MetalHairSkyBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		831FEAFA19D0EBD6004173E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBE89791A303E5000CAB93C /* bk.png in Resources */,
+				9B578D441A12C720003B365B /* hand.obj in Resources */,
+				9B578D461A12C720003B365B /* hip.obj in Resources */,
+				9BBE897B1A303E5000CAB93C /* ft.png in Resources */,
+				9B578D411A12C720003B365B /* arm.obj in Resources */,
+				9BBE897D1A303E5000CAB93C /* rt.png in Resources */,
+				9BBE897C1A303E5000CAB93C /* lf.png in Resources */,
+				9BBE897E1A303E5000CAB93C /* up.png in Resources */,
+				9B578D491A12C720003B365B /* torso.obj in Resources */,
+				9B578D431A12C720003B365B /* foot.obj in Resources */,
+				9B578D581A17EE28003B365B /* hair.obj in Resources */,
+				9BBE897A1A303E5000CAB93C /* dn.png in Resources */,
+				9B578D421A12C720003B365B /* calf.obj in Resources */,
+				9B578D481A12C720003B365B /* thigh.obj in Resources */,
+				9B578D211A11C155003B365B /* calf.png in Resources */,
+				831FEB0B19D0EBD7004173E4 /* Main.storyboard in Resources */,
+				831FEB1019D0EBD7004173E4 /* LaunchScreen.xib in Resources */,
+				9B578D471A12C720003B365B /* shoulder.obj in Resources */,
+				9B578D451A12C720003B365B /* head5.obj in Resources */,
+				9B578D5B1A17F59C003B365B /* hairlock.obj in Resources */,
+				831FEB0D19D0EBD7004173E4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		831FEAF819D0EBD6004173E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8360EA3019D767AF005A0326 /* Mesh.m in Sources */,
+				831FEB2719D0EE01004173E4 /* MetalView.m in Sources */,
+				9B578D5F1A17F810003B365B /* Placement.m in Sources */,
+				8369400E19D53BB100BF1652 /* Shaders.metal in Sources */,
+				9B578D311A12C6B7003B365B /* common.m in Sources */,
+				831FEB0819D0EBD7004173E4 /* ViewController.mm in Sources */,
+				83B45A1719D89C33000858A2 /* OBJGroup.m in Sources */,
+				9BBE895B1A30356C00CAB93C /* skybox.metal in Sources */,
+				8369400719D4DC8D00BF1652 /* Renderer.mm in Sources */,
+				831FEB0519D0EBD7004173E4 /* AppDelegate.m in Sources */,
+				831FEB0219D0EBD6004173E4 /* main.m in Sources */,
+				9B578D301A12C6B7003B365B /* BodyPart.mm in Sources */,
+				9BBE895C1A30356C00CAB93C /* SkyBox.mm in Sources */,
+				8360EA2D19D76767005A0326 /* Material.m in Sources */,
+				9BBE895A1A30356C00CAB93C /* AAPLTexture.m in Sources */,
+				9B578D551A154FE3003B365B /* ManualControlView.m in Sources */,
+				8360EA2A19D73E86005A0326 /* Transformations.mm in Sources */,
+				9B578D321A12C6B7003B365B /* Dancer.mm in Sources */,
+				83693FF619D38A5000BF1652 /* OBJModel.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		831FEB0919D0EBD7004173E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831FEB0A19D0EBD7004173E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		831FEB0E19D0EBD7004173E4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831FEB0F19D0EBD7004173E4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		831FEB1D19D0EBD7004173E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		831FEB1E19D0EBD7004173E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		831FEB2019D0EBD7004173E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7237X7VY2S;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				INFOPLIST_FILE = BasicTexturing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MetalHairSkyBox;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		831FEB2119D0EBD7004173E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7237X7VY2S;
+				INFOPLIST_FILE = BasicTexturing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.metalbyexample.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MetalHairSkyBox;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		831FEAF719D0EBD6004173E4 /* Build configuration list for PBXProject "MetalHairSkyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831FEB1D19D0EBD7004173E4 /* Debug */,
+				831FEB1E19D0EBD7004173E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831FEB1F19D0EBD7004173E4 /* Build configuration list for PBXNativeTarget "MetalHairSkyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831FEB2019D0EBD7004173E4 /* Debug */,
+				831FEB2119D0EBD7004173E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 831FEAF419D0EBD6004173E4 /* Project object */;
+}
